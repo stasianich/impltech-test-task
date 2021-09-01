@@ -53,6 +53,7 @@ export const Person = ({ person }) => {
           <label htmlFor="inputComment">New comment:</label>
           <textarea
             className="form-control"
+            style={{ resize: `none` }}
             rows="3"
             id="inputComment"
             value={newComment}
