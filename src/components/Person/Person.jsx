@@ -40,7 +40,6 @@ export const Person = ({ person }) => {
         <h6 className="card-subtitle mb-2 text-muted">
           {`Birth year: ${person.birth_year}`}
         </h6>
-      {/* </div> */}
 
       <form
         className="new-comment-form"
