@@ -1,0 +1,44 @@
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+}
+
+.load-more-button {
+  width: 200px;
+  height: 40px;
+  border-radius: 10px;
+  margin-bottom: 50px;
+  background: linear-gradient(
+    90deg,
+    #ffd748 0.02%,
+    rgba(195, 199, 11, 0.96) 99.97%,
+    #cac6ab 99.98%,
+    #d3e9e1 99.99%
+  );
+  border: none;
+  cursor: pointer;
+
+  &:hover {
+    box-shadow: 0 0 30px #ffd748;
+  }
+
+  &:active {
+    transform: scale(0.9);
+  }
+}

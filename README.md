@@ -2,7 +2,7 @@
 
 List of people
 
-[DEMO](https://stasianich.github.io/pechenyi-stanislav/)
+[DEMO](https://stasianich.github.io/stasianich/impltech-test-task/)
 
 ## Description
 
