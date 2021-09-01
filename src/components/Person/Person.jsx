@@ -59,7 +59,13 @@ export const Person = ({ person }) => {
             onChange={event => setNewComment(event.target.value)}
           />
         </div>
-        <button type="submit" className="btn btn-primary">Add comment</button>
+        <button
+          type="submit"
+          className="btn btn-primary"
+          disabled={!newComment}
+        >
+          Add comment
+        </button>
       </form>
 
       <h6
