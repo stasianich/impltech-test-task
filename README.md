@@ -16,7 +16,7 @@ List of people
 * React v16.13.1 and higher
 * Node v12.16.3 and higher
 * NPM v6.14.4 and higher
-* classnames: v2.3.1
+* bootstrap: v5.1.0 and higher
 * node-sass: v4.12.0 and higher
 * prop-types: v15.7.2
 * react-loader-spinner v4.0.0

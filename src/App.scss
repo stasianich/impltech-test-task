@@ -2,21 +2,11 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  background: #ececec;
 }
 
 * {
   box-sizing: border-box;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-ul,
-ol {
-  margin: 0;
-  padding: 0;
 }
 
 .load-more-button {

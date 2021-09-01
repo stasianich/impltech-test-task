@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import { v4 as uuidv4 } from 'uuid';
 import './Person.scss';
-import classNames from 'classnames';
 import { PersonType } from '../../types';
+import 'bootstrap/dist/css/bootstrap.css';
 
 export const Person = ({ person }) => {
   const [newComment, setNewComment] = useState('');
@@ -32,74 +32,62 @@ export const Person = ({ person }) => {
   }, [commentsList]);
 
   return (
-    <article className="person-card">
-      <h2 className="person-card__name">
-        {person.name}
-      </h2>
-
-      <h4 className="person-card__birth-year">
-        {`Birth year: ${person.birth_year}`}
-      </h4>
-
-      <hr className="person-card__line" />
+    <div className="card" style={{ width: `${18}rem` }}>
+      <div className="card-body">
+        <h5 className="card-title">
+          {person.name}
+        </h5>
+        <h6 className="card-subtitle mb-2 text-muted">
+          {`Birth year: ${person.birth_year}`}
+        </h6>
+      </div>
 
       <form
-        className="add-comment-form"
+        className="new-comment-form"
         onSubmit={(event) => {
           event.preventDefault();
           addComment();
         }}
       >
-        <textarea
-          className="add-comment-form__body"
-          value={newComment}
-          onChange={event => setNewComment(event.target.value)}
-        />
-        <button
-          type="submit"
-          className={
-            classNames(
-              'add-comment-form__submit-button', {
-                'submit-button--enabled': newComment,
-              },
-            )
-          }
-          disabled={!newComment}
-        >
-          Add comment
-        </button>
+        <div className="form-group">
+          <label htmlFor="inputComment">New comment:</label>
+          <textarea
+            className="form-control"
+            rows="3"
+            id="inputComment"
+            value={newComment}
+            onChange={event => setNewComment(event.target.value)}
+          />
+        </div>
+        <button type="submit" className="btn btn-primary">Add comment</button>
       </form>
 
-      <hr className="person-card__line" />
-
-      <div className="person-card__comments comments">
-        <h5 className="comments__title">
-          COMMENTS:
-        </h5>
-
+      <h6
+        className="card-subtitle text-muted"
+        style={{ textAlign: 'center' }}
+      >
+        {`All comments: ${commentsList.length}`}
+      </h6>
+      <ul className="list-group list-group-flush">
         {commentsList.length > 0
           ? (
-            <ol
-              className="comments__comments-list"
-            >
+            <>
               {commentsList.map(comment => (
                 <li
-                  className="comment"
                   key={comment.id}
+                  className="list-group-item"
                 >
                   {comment.body}
                 </li>
               ))}
-            </ol>
-          )
-          : (
-            <span>
+            </>
+          ) : (
+            <li className="list-group-item">
               No comments
-            </span>
-          )
-        }
-      </div>
-    </article>
+            </li>
+          )}
+      </ul>
+    </div>
   );
 };
 

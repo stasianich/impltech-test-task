@@ -1,15 +1,9 @@
 .peopleList {
   max-width: 1200px;
   display: flex;
-  // flex-direction: column;
   flex-wrap: wrap;
   justify-content: center;
   list-style-type: none;
   gap: 20px;
   padding: 40px 0;
-
-}
-
-.person {
-  max-width: 200px;
 }
