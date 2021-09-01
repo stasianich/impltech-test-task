@@ -32,7 +32,7 @@ export const Person = ({ person }) => {
   }, [commentsList]);
 
   return (
-    <div className="card" style={{ width: `${18}rem` }}>
+    <div className="card">
       <div className="card-body">
         <h5 className="card-title">
           {person.name}
@@ -40,7 +40,7 @@ export const Person = ({ person }) => {
         <h6 className="card-subtitle mb-2 text-muted">
           {`Birth year: ${person.birth_year}`}
         </h6>
-      </div>
+      {/* </div> */}
 
       <form
         className="new-comment-form"
@@ -94,6 +94,7 @@ export const Person = ({ person }) => {
             </li>
           )}
       </ul>
+      </div>
     </div>
   );
 };

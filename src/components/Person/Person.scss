@@ -1,5 +1,6 @@
 .card {
-  row-gap: 15px;
+  height: 100%;
+  width: 18rem;
 }
 
 .new-comment-form {
@@ -8,6 +9,7 @@
   align-items: center;
   width: 100%;
   row-gap: 5px;
+  margin-bottom: 20px;
 }
 
 .form-group {
