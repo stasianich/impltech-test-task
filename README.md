@@ -2,7 +2,7 @@
 
 List of people
 
-[DEMO](https://stasianich.github.io/stasianich/impltech-test-task/)
+[DEMO](https://stasianich.github.io/impltech-test-task/)
 
 ## Description
 
@@ -19,7 +19,6 @@ List of people
 * classnames: v2.3.1
 * node-sass: v4.12.0 and higher
 * prop-types: v15.7.2
-* bootstrap: v5.1.0 and higher
 * react-loader-spinner v4.0.0
 
 ### Installing

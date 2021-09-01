@@ -5,7 +5,6 @@
   "keywords": [],
   "license": "GPL-3.0",
   "dependencies": {
-    "bootstrap": "^5.1.0",
     "classnames": "^2.3.1",
     "node-sass": "^4.14.1",
     "prop-types": "^15.7.2",
